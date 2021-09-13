@@ -1,0 +1,284 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #4d4643;
+}
+
+a {
+  color: #3E94EF;
+  text-decoration: none;
+}
+
+a:hover {
+	
+  color: #1bacf5;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+#header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 4px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#header .navbar-brand {
+  font-size: 20px;
+  margin-left: 13px;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  
+}
+
+#header .navbar-brand a {
+  color: #1bacf5;
+}
+
+#header .logo a span {
+  color: #f5cd1b;
+}
+/* Navigation Menu */
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: right;
+}
+.navbar li {
+  position: relative;
+}
+
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0 5px 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1bacf5;
+  white-space: nowrap;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #f5cd1b;
+}
+
+
+
+/* Section Style. This style will after all the section in the page */
+section {
+  padding: 70px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f7f7f7;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #1bacf5;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+  text-align: justify;
+}
+.dispp li{
+	list-style-type: none;
+	display: inline;
+}
+hr{
+  color: #f5cd1b;
+}
+
+
+/* Our special Menus  */
+.menu .member {
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.menu .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+.menu .member .member-info {
+  padding: 10px 5px;
+}
+
+.menu .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #111;
+}
+
+.menu .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #b4aca8;
+}
+
+.menu .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #847872;
+}
+
+.menu .member:hover .social {
+  opacity: 1;
+}
+.menuu{
+	width: 230px;
+	height: 230px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	padding: 7px;
+	border: 3px solid #f5cd1b;
+	
+}
+/* Our Team Section  */
+
+.team .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  color: #111;
+  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.team .member .social a i {
+  line-height: 0;
+}
+
+.team .member .social a:hover {
+  color: #1bbd36;
+}
+
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.team .member .member-info {
+  padding: 25px 15px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #111;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #b4aca8;
+}
+
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #847872;
+}
+
+.team .member:hover .social {
+  opacity: 1;
+}
+/* footer section  */
+#footer {
+  color: #fff;
+  font-size: 14px;
+  background: #111;
+  padding: 10px 0 3px 0;
+}
+
+#footer .credits {
+  padding-top: 7px;
+  font-size: 13px;
+  color: #fff;
+}
+#footer .credits a{
+	color: #f5cd1b;
+}
